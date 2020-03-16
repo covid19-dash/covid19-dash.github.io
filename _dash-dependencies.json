@@ -21,11 +21,11 @@
     "inputs": [
       {
         "id": "table", 
-        "property": "derived_virtual_data"
+        "property": "data"
       }, 
       {
         "id": "table", 
-        "property": "derived_virtual_selected_rows"
+        "property": "selected_rows"
       }
     ], 
     "output": "store.data", 
