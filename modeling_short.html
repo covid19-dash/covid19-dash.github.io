@@ -13155,7 +13155,7 @@ div#notebook {
 <pre>________________________________________________________________________________
 [Memory] Calling data_input.get_data...
 get_data()
-________________________________________________________get_data - 15.4s, 0.3min
+_________________________________________________________get_data - 6.4s, 0.1min
 </pre>
 </div>
 </div>
@@ -13399,9 +13399,6 @@ the active counts</p>
 <span class="k">def</span> <span class="nf">fit_on_window</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">kernel</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot; Fit the last window of the data</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">kernel</span> <span class="o">=</span> <span class="n">smoothing_kernel</span>
-    <span class="n">data</span> <span class="o">=</span> <span class="n">active</span>
-
     <span class="n">kernel_size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">kernel</span><span class="p">)</span>
     <span class="n">last_fortnight</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="n">kernel_size</span><span class="p">:]</span>
     <span class="n">log_last_fortnight</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">last_fortnight</span><span class="p">)</span>
@@ -13493,7 +13490,7 @@ the active counts</p>
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>&lt;ipython-input-8-00b9159d42f6&gt;:12: RuntimeWarning: divide by zero encountered in log
+<pre>&lt;ipython-input-8-205198505528&gt;:9: RuntimeWarning: divide by zero encountered in log
   log_last_fortnight = np.log(last_fortnight)
 </pre>
 </div>
