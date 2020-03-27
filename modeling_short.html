@@ -13167,7 +13167,7 @@ build the model.</p>
 <pre>________________________________________________________________________________
 [Memory] Calling data_input.get_data...
 get_data()
-_________________________________________________________get_data - 4.9s, 0.1min
+_________________________________________________________get_data - 6.7s, 0.1min
 </pre>
 </div>
 </div>
@@ -13531,7 +13531,8 @@ assumed Gaussian, which justifies the use of a squared loss.</p>
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">growth_rate</span><span class="o">.</span><span class="n">T</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_rows&#39;</span><span class="p">,</span> <span class="mi">60</span><span class="p">)</span>
+<span class="n">growth_rate</span><span class="p">[</span><span class="n">most_affected_countries</span><span class="p">[:</span><span class="mi">60</span><span class="p">]]</span><span class="o">.</span><span class="n">T</span>
 </pre></div>
 
     </div>
@@ -13578,63 +13579,307 @@ assumed Gaussian, which justifies the use of a squared loss.</p>
   </thead>
   <tbody>
     <tr>
-      <th>GUY</th>
-      <th>Guyana</th>
-      <td>0.910271</td>
+      <th>USA</th>
+      <th>United States</th>
+      <td>1.295998</td>
     </tr>
     <tr>
-      <th>VCT</th>
-      <th>Saint Vincent and the Grenadines</th>
-      <td>1.000000</td>
+      <th>CHN</th>
+      <th>China</th>
+      <td>1.001021</td>
     </tr>
     <tr>
-      <th>TLS</th>
-      <th>Timor-Leste</th>
-      <td>1.000000</td>
+      <th>ITA</th>
+      <th>Italy</th>
+      <td>1.099334</td>
     </tr>
     <tr>
-      <th>LBY</th>
-      <th>Libya</th>
-      <td>1.000000</td>
+      <th>ESP</th>
+      <th>Spain</th>
+      <td>1.192748</td>
     </tr>
     <tr>
-      <th>PNG</th>
-      <th>Papua New Guinea</th>
-      <td>1.000000</td>
+      <th>DEU</th>
+      <th>Germany</th>
+      <td>1.168023</td>
     </tr>
     <tr>
-      <th>...</th>
-      <th>...</th>
-      <td>...</td>
+      <th>FRA</th>
+      <th>France</th>
+      <td>1.158340</td>
     </tr>
     <tr>
-      <th>UGA</th>
-      <th>Uganda</th>
-      <td>1.470007</td>
+      <th>IRN</th>
+      <th>Iran, Islamic Republic of</th>
+      <td>1.073013</td>
     </tr>
     <tr>
-      <th>DMA</th>
-      <th>Dominica</th>
-      <td>1.470526</td>
+      <th>GBR</th>
+      <th>United Kingdom</th>
+      <td>1.210290</td>
     </tr>
     <tr>
-      <th>DJI</th>
-      <th>Djibouti</th>
-      <td>1.470581</td>
+      <th>CHE</th>
+      <th>Switzerland</th>
+      <td>1.155754</td>
     </tr>
     <tr>
-      <th>CIV</th>
-      <th>Côte d'Ivoire</th>
-      <td>1.480508</td>
+      <th>KOR</th>
+      <th>South Korea</th>
+      <td>1.010625</td>
+    </tr>
+    <tr>
+      <th>NLD</th>
+      <th>Netherlands</th>
+      <td>1.169930</td>
+    </tr>
+    <tr>
+      <th>AUT</th>
+      <th>Austria</th>
+      <td>1.193212</td>
+    </tr>
+    <tr>
+      <th>BEL</th>
+      <th>Belgium</th>
+      <td>1.185792</td>
+    </tr>
+    <tr>
+      <th>CAN</th>
+      <th>Canada</th>
+      <td>1.266619</td>
     </tr>
     <tr>
       <th>TUR</th>
       <th>Turkey</th>
       <td>1.507647</td>
     </tr>
+    <tr>
+      <th>PRT</th>
+      <th>Portugal</th>
+      <td>1.250528</td>
+    </tr>
+    <tr>
+      <th>NOR</th>
+      <th>Norway</th>
+      <td>1.097561</td>
+    </tr>
+    <tr>
+      <th>BRA</th>
+      <th>Brazil</th>
+      <td>1.250879</td>
+    </tr>
+    <tr>
+      <th>SWE</th>
+      <th>Sweden</th>
+      <td>1.101937</td>
+    </tr>
+    <tr>
+      <th>AUS</th>
+      <th>Australia</th>
+      <td>1.213305</td>
+    </tr>
+    <tr>
+      <th>ISR</th>
+      <th>Israel</th>
+      <td>1.314501</td>
+    </tr>
+    <tr>
+      <th>MYS</th>
+      <th>Malaysia</th>
+      <td>1.129599</td>
+    </tr>
+    <tr>
+      <th>DNK</th>
+      <th>Denmark</th>
+      <td>1.077595</td>
+    </tr>
+    <tr>
+      <th>CZE</th>
+      <th>Czech Republic</th>
+      <td>1.172515</td>
+    </tr>
+    <tr>
+      <th>IRL</th>
+      <th>Ireland</th>
+      <td>1.216162</td>
+    </tr>
+    <tr>
+      <th>LUX</th>
+      <th>Luxembourg</th>
+      <td>1.244527</td>
+    </tr>
+    <tr>
+      <th>ECU</th>
+      <th>Ecuador</th>
+      <td>1.290829</td>
+    </tr>
+    <tr>
+      <th>JPN</th>
+      <th>Japan</th>
+      <td>1.059481</td>
+    </tr>
+    <tr>
+      <th>CHL</th>
+      <th>Chile</th>
+      <td>1.235978</td>
+    </tr>
+    <tr>
+      <th>POL</th>
+      <th>Poland</th>
+      <td>1.201124</td>
+    </tr>
+    <tr>
+      <th>PAK</th>
+      <th>Pakistan</th>
+      <td>1.178769</td>
+    </tr>
+    <tr>
+      <th>THA</th>
+      <th>Thailand</th>
+      <td>1.201595</td>
+    </tr>
+    <tr>
+      <th>ROU</th>
+      <th>Romania</th>
+      <td>1.217159</td>
+    </tr>
+    <tr>
+      <th>SAU</th>
+      <th>Saudi Arabia</th>
+      <td>1.217123</td>
+    </tr>
+    <tr>
+      <th>FIN</th>
+      <th>Finland</th>
+      <td>1.133147</td>
+    </tr>
+    <tr>
+      <th>ZAF</th>
+      <th>South Africa</th>
+      <td>1.314919</td>
+    </tr>
+    <tr>
+      <th>IDN</th>
+      <th>Indonesia</th>
+      <td>1.175845</td>
+    </tr>
+    <tr>
+      <th>GRC</th>
+      <th>Greece</th>
+      <td>1.105949</td>
+    </tr>
+    <tr>
+      <th>RUS</th>
+      <th>Russia</th>
+      <td>1.238160</td>
+    </tr>
+    <tr>
+      <th>ISL</th>
+      <th>Iceland</th>
+      <td>1.131140</td>
+    </tr>
+    <tr>
+      <th>IND</th>
+      <th>India</th>
+      <td>1.187130</td>
+    </tr>
+    <tr>
+      <th>PHL</th>
+      <th>Philippines</th>
+      <td>1.178526</td>
+    </tr>
+    <tr>
+      <th>SGP</th>
+      <th>Singapore</th>
+      <td>1.103570</td>
+    </tr>
+    <tr>
+      <th>PER</th>
+      <th>Peru</th>
+      <td>1.172061</td>
+    </tr>
+    <tr>
+      <th>SVN</th>
+      <th>Slovenia</th>
+      <td>1.091815</td>
+    </tr>
+    <tr>
+      <th>PAN</th>
+      <th>Panama</th>
+      <td>1.240825</td>
+    </tr>
+    <tr>
+      <th>QAT</th>
+      <th>Qatar</th>
+      <td>1.030213</td>
+    </tr>
+    <tr>
+      <th>EST</th>
+      <th>Estonia</th>
+      <td>1.119246</td>
+    </tr>
+    <tr>
+      <th>ARG</th>
+      <th>Argentina</th>
+      <td>1.234348</td>
+    </tr>
+    <tr>
+      <th>HRV</th>
+      <th>Croatia</th>
+      <td>1.226549</td>
+    </tr>
+    <tr>
+      <th>EGY</th>
+      <th>Egypt</th>
+      <td>1.115161</td>
+    </tr>
+    <tr>
+      <th>COL</th>
+      <th>Colombia</th>
+      <td>1.246837</td>
+    </tr>
+    <tr>
+      <th>DOM</th>
+      <th>Dominican Republic</th>
+      <td>1.377783</td>
+    </tr>
+    <tr>
+      <th>MEX</th>
+      <th>Mexico</th>
+      <td>1.211079</td>
+    </tr>
+    <tr>
+      <th>BHR</th>
+      <th>Bahrain</th>
+      <td>1.076657</td>
+    </tr>
+    <tr>
+      <th>SRB</th>
+      <th>Serbia</th>
+      <td>1.198234</td>
+    </tr>
+    <tr>
+      <th>IRQ</th>
+      <th>Iraq</th>
+      <td>1.115706</td>
+    </tr>
+    <tr>
+      <th>LBN</th>
+      <th>Lebanon</th>
+      <td>1.128777</td>
+    </tr>
+    <tr>
+      <th>DZA</th>
+      <th>Algeria</th>
+      <td>1.211893</td>
+    </tr>
+    <tr>
+      <th>ARE</th>
+      <th>United Arab Emirates</th>
+      <td>1.159585</td>
+    </tr>
   </tbody>
 </table>
-<p>166 rows × 1 columns</p>
 </div>
 </div>
 
