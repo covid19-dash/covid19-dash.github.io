@@ -14603,7 +14603,7 @@ build the model.</p>
 <pre>________________________________________________________________________________
 [Memory] Calling data_input.get_data...
 get_data()
-________________________________________________________get_data - 38.1s, 0.6min
+________________________________________________________get_data - 32.9s, 0.5min
 </pre>
 </div>
 </div>
@@ -14944,13 +14944,13 @@ assumed Gaussian, which justifies the use of a squared loss.</p>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>/tmp/ipykernel_2366/1007072283.py:29: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead.  To get a de-fragmented frame, use `newframe = frame.copy()`
+<pre>/tmp/ipykernel_2226/1007072283.py:29: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead.  To get a de-fragmented frame, use `newframe = frame.copy()`
   predicted_cases[country] = np.exp(res_wls.params.const +
-/tmp/ipykernel_2366/1007072283.py:36: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead.  To get a de-fragmented frame, use `newframe = frame.copy()`
+/tmp/ipykernel_2226/1007072283.py:36: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead.  To get a de-fragmented frame, use `newframe = frame.copy()`
   predicted_cases_lower[country] = np.exp(res_wls.params.const +
-/tmp/ipykernel_2366/1007072283.py:39: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead.  To get a de-fragmented frame, use `newframe = frame.copy()`
+/tmp/ipykernel_2226/1007072283.py:39: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead.  To get a de-fragmented frame, use `newframe = frame.copy()`
   predicted_cases_upper[country] = np.exp(res_wls.params.const +
-/tmp/ipykernel_2366/1007072283.py:47: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead.  To get a de-fragmented frame, use `newframe = frame.copy()`
+/tmp/ipykernel_2226/1007072283.py:47: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead.  To get a de-fragmented frame, use `newframe = frame.copy()`
   predicted_cases[&#39;date&#39;] = prediction_dates
 </pre>
 </div>
